@@ -57,7 +57,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "helmet": "^8.0.0",
-    "inversify": "^6.0.3",
+    "inversify": "^7.0.0",
     "inversify-express-utils": "^6.4.10",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
