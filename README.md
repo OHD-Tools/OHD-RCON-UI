@@ -55,3 +55,15 @@ yarn migrate
 ```bash
 yarn dev
 ```
+
+### Adminer Login Credentials
+
+If using default Settings:
+
+```env
+System: MySQL
+Server: ohd-db
+Username: ohd-rcon
+Password: ohd-rcon
+Database: ohd-rcon
+```
