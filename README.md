@@ -33,7 +33,7 @@ yarn install
 3. Set up the Database
 
 ```bash
-docker compose -f docker-compose.yml --profile local up
+docker compose -f docker-compose.yml --profile local up -d
 ```
 
 4. Setup the ENV
