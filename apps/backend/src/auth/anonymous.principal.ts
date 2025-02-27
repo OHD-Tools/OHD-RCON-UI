@@ -1,7 +1,9 @@
 import { interfaces } from 'inversify-express-utils';
 import { ApiPermission } from './ApiPermission';
 export class AnonymousPrincipal implements interfaces.Principal {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   public details: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(details: any) {
     this.details = details;
   }

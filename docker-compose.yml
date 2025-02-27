@@ -1,0 +1,42 @@
+volumes:
+  ohd-db:
+
+services:
+  # ohd-app:
+  #   container_name: ohd-app
+  #   profiles:
+  #     - build
+  #   build:
+  #     context: ./
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "3000:3000"
+  #     - "3030:3030"
+  #   expose:
+  #     - "3000"
+  #     - "3030"
+  ohd-db:
+    container_name: ohd-db
+    profiles:
+      - local
+    image: mysql:8.4
+    command: --mysql-native-password=ON
+    environment:
+      MYSQL_DATABASE: "ohd-rcon"
+      MYSQL_USER: "ohd-rcon"
+      MYSQL_PASSWORD: "ohd-rcon"
+      MYSQL_ROOT_PASSWORD: "ohd-rcon"
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes:
+      - ohd-db:/var/lib/mysql
+  ohd-adminer:
+    container_name: ohd-adminer
+    profiles:
+      - local
+    image: adminer
+    restart: always
+    ports:
+      - 8181:8080
