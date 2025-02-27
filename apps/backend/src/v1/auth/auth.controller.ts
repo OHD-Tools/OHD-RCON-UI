@@ -3,11 +3,12 @@ import { EnvService } from '../../env/env.service';
 import { inject } from 'inversify';
 import { INJECT } from '../../INJECTS';
 import { AuthService } from '../../auth/auth.service';
-const env = new EnvService();
+
+const _env = new EnvService();
 @controller('/v1/auth')
 export class AuthController extends BaseHttpController {
   constructor(
-    @inject(INJECT.AuthService) private readonly authService: AuthService
+    @inject(INJECT.AuthService) private readonly authService: AuthService,
   ) {
     super();
   }

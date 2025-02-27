@@ -4,7 +4,7 @@
   "scripts": {
     "lint:fix": "yarn manypkg exec yarn lint:fix",
     "postinstall": "preconstruct dev && manypkg check",
-    "dev": "concurrently -p \"[{name}]\" -n \"SERVER\" -c \"bgBlue.bold\" \"manypkg run backend dev\""
+    "dev": "concurrently -p \"[{name}]\" -n \"CLIENT,SERVER\" -c \"bgGreen.bold,bgBlue.bold\" \"manypkg run frontend dev\" \"manypkg run backend dev\""
   },
   "workspaces": [
     "apps/*"

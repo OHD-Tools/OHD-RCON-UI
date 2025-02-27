@@ -13,6 +13,7 @@ export class AuthProvider implements interfaces.AuthProvider {
   @inject(INJECT.AuthService) declare private readonly authService: AuthService;
 
   async getUser(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>,
   ): Promise<interfaces.Principal> {
     const bearerHeader: string | undefined = req.headers['authorization'];

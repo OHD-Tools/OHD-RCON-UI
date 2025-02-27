@@ -4,5 +4,5 @@ export enum ApiPermission {
   BAN_READ = 'BAN_READ',
   BAN_WRITE = 'BAN_WRITE',
   KICK = 'KICK',
-  ANON = 'ANONYMOUS'
+  ANON = 'ANONYMOUS',
 }

@@ -1,1 +1,1 @@
-import './auth/auth.controller'
+import './auth/auth.controller';
