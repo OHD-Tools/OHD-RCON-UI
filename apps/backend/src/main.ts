@@ -7,13 +7,23 @@ import chalk from 'chalk';
 import cors from 'cors';
 import { methodToColor } from './utils/methodToColor';
 import { Logger } from './utils/logger';
-import { json, urlencoded } from 'body-parser';
-
+import {
+  json,
+  urlencoded,
+  type Request,
+  type Response,
+  type NextFunction,
+} from 'express';
 import './v1';
+import { setupModels } from './connection';
+import { NotFoundError } from './errors/NotFoundError';
+import { NetworkError } from './errors/NetworkError';
+import { ZodError } from 'zod';
 
 const createServer = () => {
   bindContainer(container);
   const env = new EnvService();
+  setupModels(env);
   //? DB Connection
   const server = new InversifyExpressServer(
     container,
@@ -62,9 +72,26 @@ const createServer = () => {
   });
 
   const app = server.build();
+  app.use((req, _res, next) => {
+    next(new NotFoundError(req.path));
+  });
+
+  app.use((err: unknown, _req: Request, res: Response, _: NextFunction) => {
+    if (err instanceof NetworkError) {
+      Logger.warn(err.name);
+      res.status(err.statusCode).json(err);
+    } else if (err instanceof ZodError) {
+      Logger.warn(`ZOD: ${err.message}`);
+      res.status(400).json(err);
+    } else {
+      Logger.error(err);
+      res.status(500).send('An unexpected error has occured');
+    }
+  });
 
   app.listen(env.EXPRESS_PORT, () => {
-    Logger.info(`App listening on port ${env.EXPRESS_PORT}`);
+    Logger.init();
+    Logger.info(`Listening on port ${env.EXPRESS_PORT}`);
   });
 };
 

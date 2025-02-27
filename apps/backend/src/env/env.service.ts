@@ -3,6 +3,8 @@ import { envConfig, type EnvironmentConfig } from './envConfig';
 import colors from 'colors/safe';
 import { Logger } from '../utils/logger';
 
+import type { Dialect } from 'sequelize';
+
 let has_warned = false;
 @injectable()
 export class EnvService implements EnvironmentConfig {
@@ -11,7 +13,7 @@ export class EnvService implements EnvironmentConfig {
 
   declare LOGFILE: string | null;
 
-  declare DB_DIALECT: string;
+  declare DB_DIALECT: Dialect;
   declare DB_DATABASE: string;
   declare DB_USER: string;
   declare DB_PASSWORD: string;
