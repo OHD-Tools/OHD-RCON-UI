@@ -1,7 +1,7 @@
 import type { Container } from 'inversify';
-import { AuthService } from './auth/auth.service';
-import { INJECT } from './INJECTS';
-import { EnvService } from './env/env.service';
+import { AuthService } from '~v1/auth/auth.service';
+import { INJECT } from '~INJECTS';
+import { EnvService } from '~env/env.service';
 
 export const bindContainer = (container: Container) => {
   container

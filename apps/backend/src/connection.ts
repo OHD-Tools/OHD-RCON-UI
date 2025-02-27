@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize-typescript';
 import chalk from 'chalk';
-import { Logger } from './utils/logger';
+import { Logger } from '~utils/logger';
 import type { Dialect } from 'sequelize';
 
 export const setupModels = (env: {

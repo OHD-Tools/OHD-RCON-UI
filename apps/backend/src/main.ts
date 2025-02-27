@@ -1,12 +1,12 @@
-import { bindContainer } from './bindContainer';
-import { container } from './container';
+import { bindContainer } from '~/bindContainer';
+import { container } from '~/container';
 import { InversifyExpressServer } from 'inversify-express-utils';
-import { AuthProvider } from './auth/auth.provider';
-import { EnvService } from './env/env.service';
+import { AuthProvider } from '~/auth/auth.provider';
+import { EnvService } from '~env/env.service';
 import chalk from 'chalk';
 import cors from 'cors';
-import { methodToColor } from './utils/methodToColor';
-import { Logger } from './utils/logger';
+import { methodToColor } from '~utils/methodToColor';
+import { Logger } from '~utils/logger';
 import {
   json,
   urlencoded,

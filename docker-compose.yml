@@ -36,7 +36,7 @@ services:
     container_name: ohd-adminer
     profiles:
       - local
-    image: adminer
+    image: adminer:4.17.1
     restart: always
     ports:
       - 8181:8080

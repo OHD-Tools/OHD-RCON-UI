@@ -1,9 +1,9 @@
 import { inject, injectable } from 'inversify';
 import jwt from 'jsonwebtoken';
-import { Logger } from '../utils/logger';
-import { EnvService } from '../env/env.service';
-import { INJECT } from '../INJECTS';
-import { ApiPermission } from './ApiPermission';
+import { Logger } from '~utils/logger';
+import { EnvService } from '~env/env.service';
+import { INJECT } from '~INJECTS';
+import { ApiPermission } from '~/auth/ApiPermission';
 @injectable()
 export class AuthService {
   constructor() {

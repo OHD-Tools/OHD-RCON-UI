@@ -4,8 +4,8 @@ import type { ParsedQs } from 'qs';
 import { inject, injectable } from 'inversify';
 import { interfaces } from 'inversify-express-utils';
 import { AnonymousPrincipal } from './anonymous.principal';
-import { INJECT } from '../INJECTS';
-import { AuthService } from './auth.service';
+import { INJECT } from '~INJECTS';
+import { AuthService } from '~v1/auth/auth.service';
 import { OHDUserPrincipal } from './ohduser.principal';
 
 @injectable()

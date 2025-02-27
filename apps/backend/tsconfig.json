@@ -22,6 +22,16 @@
     "skipLibCheck": true,
     "strict": true,
 
+    /* Pathing */
+    "baseUrl": "./src/",
+    "paths": {
+      "~v1/*": ["./v1/*"],
+      "~utils/*": ["./utils/*"],
+      "~/*": ["./*"],
+      "~env/*": ["./env/*"],
+      "~INJECTS": ["./INJECTS"],
+      "~errors/*": ["./errors/*"]
+    }
   },
   "include": ["src"]
 }

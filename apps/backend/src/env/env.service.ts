@@ -1,7 +1,7 @@
 import { injectable } from 'inversify';
 import { envConfig, type EnvironmentConfig } from './envConfig';
 import colors from 'colors/safe';
-import { Logger } from '../utils/logger';
+import { Logger } from '~utils/logger';
 
 import type { Dialect } from 'sequelize';
 
