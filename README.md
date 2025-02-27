@@ -44,7 +44,13 @@ Copy the env example at `/apps/backend/.env.example` to `/apps/backend/.env`
 cp ./apps/backend/.env.example ./apps/backend/.env
 ```
 
-5. Start the application
+5. Run Migrations
+
+```bash
+yarn migrate
+```
+
+6. Start the application
 
 ```bash
 yarn dev
