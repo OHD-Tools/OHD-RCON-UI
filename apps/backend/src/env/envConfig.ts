@@ -11,31 +11,38 @@ export const envConfig = {
     optional: true,
     default: 'http://localhost:3030',
   },
-  MYSQL_DATABASE: {
+  DB_DIALECT: {
+    type: 'string',
+    description:
+      "'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle'",
+    optional: true,
+    default: 'mysql',
+  },
+  DB_DATABASE: {
     type: 'string',
     description: 'Self Explanatory',
     optional: false,
     default: null,
   },
-  MYSQL_USER: {
+  DB_USER: {
     type: 'string',
     description: 'Self Explanatory',
     optional: false,
     default: null,
   },
-  MYSQL_PASSWORD: {
+  DB_PASSWORD: {
     type: 'string',
     description: 'Self Explanatory',
     optional: false,
     default: null,
   },
-  MYSQL_HOST: {
+  DB_HOST: {
     type: 'string',
     description: 'Self Explanatory',
     optional: false,
     default: null,
   },
-  MYSQL_PORT: {
+  DB_PORT: {
     type: 'number',
     description: 'Probably 3306',
     optional: true,
@@ -51,6 +58,12 @@ export const envConfig = {
     type: 'string',
     description: "openssl rand -base64 172 | tr -d '\\n'",
     optional: false,
+    default: null,
+  },
+  LOGFILE: {
+    type: 'string',
+    description: 'Exact path to log output',
+    optional: true,
     default: null,
   },
 } as const;

@@ -9,11 +9,14 @@ export class EnvService implements EnvironmentConfig {
   declare FRONTEND_HOST: string;
   declare BACKEND_HOST: string;
 
-  declare MYSQL_DATABASE: string;
-  declare MYSQL_USER: string;
-  declare MYSQL_PASSWORD: string;
-  declare MYSQL_HOST: string;
-  declare MYSQL_PORT: number;
+  declare LOGFILE: string | null;
+
+  declare DB_DIALECT: string;
+  declare DB_DATABASE: string;
+  declare DB_USER: string;
+  declare DB_PASSWORD: string;
+  declare DB_HOST: string;
+  declare DB_PORT: number;
 
   declare EXPRESS_PORT: number;
 
