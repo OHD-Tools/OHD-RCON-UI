@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "build": "rimraf ./build && tsc -b",
     "lint:check": "tsc --noEmit && npx eslint ./src",
     "lint:fix": "tsc --noEmit && npx eslint ./src --fix && npx prettier ./src --write",
     "dev": "dotenv -- nodemon --exec \"node -r @swc-node/register ./src/main.ts\" -e .ts"

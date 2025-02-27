@@ -3,6 +3,7 @@
   "packageManager": "yarn@4.6.0",
   "scripts": {
     "lint:fix": "yarn manypkg exec yarn lint:fix",
+    "build": "yarn manypkg exec yarn build",
     "postinstall": "preconstruct dev && manypkg check",
     "dev": "concurrently -p \"[{name}]\" -n \"CLIENT,SERVER\" -c \"bgGreen.bold,bgBlue.bold\" \"manypkg run frontend dev\" \"manypkg run backend dev\""
   },
@@ -19,6 +20,7 @@
     "eslint-plugin-react": "^7.37.4",
     "globals": "^16.0.0",
     "prettier": "^3.5.2",
+    "rimraf": "^6.0.1",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.25.0"
   },

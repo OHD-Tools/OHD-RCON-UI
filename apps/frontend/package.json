@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build --emptyOutDir",
     "lint:fix": "exit 0",
     "preview": "vite preview"
   },
