@@ -9,7 +9,7 @@
 > [!CAUTION]
 > This setup uses default credentials designed for local development.
 > If someone finds the IP to your instance and it's configured as-is
-> your server **WILL** be compromised.
+> and connected to OHD servers, your servers **WILL** be compromised.
 
 ### Pre-requisites:
 
