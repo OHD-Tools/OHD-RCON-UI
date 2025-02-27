@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@swc-node/register": "^1.10.9",
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.11.1",
+    "@swc/types": "0.1.17",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.13.5",
+    "@types/ws": "^8.5.14",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "@bombitmanbomb/utils": "^3.2.1",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "express": "^4.21.2",
+    "inversify": "^6.0.3",
+    "inversify-express-utils": "^6.4.10",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.5",
+    "sequelize-typescript": "^2.1.6",
+    "zod": "^3.24.2"
+  }
+}
