@@ -1,3 +1,4 @@
+import { User } from '~v1/users/user.model';
 import { ApiPermission } from './ApiPermission';
 import type { interfaces } from 'inversify-express-utils';
 
@@ -5,7 +6,7 @@ export class OHDUserPrincipal implements interfaces.Principal {
   public roles: Set<ApiPermission>;
   constructor(
     public id: string,
-    public details: unknown,
+    public details: User,
     public type: 'api' | 'refresh' | 'access',
     roles: Array<ApiPermission> = [],
   ) {

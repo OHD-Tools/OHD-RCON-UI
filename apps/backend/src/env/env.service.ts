@@ -40,7 +40,7 @@ export class EnvService implements EnvironmentConfig {
             `${`${colors.green('"')}${colors.bold(colors.cyan(prop))}=${colors.underline(type)}${colors.green('"')}`}${colors.gray(` is missing.`)}`,
           );
           this.warnStack.push(
-            `${colors.gray(`${colors.yellow('-')} Defaulting to`)}${`${colors.green('"')}${colors.yellow(defaultValue as unknown as string)}${colors.green('"')}`}`,
+            `${colors.gray(`${colors.yellow('-')} Defaulting to`)} ${`${colors.green('"')}${colors.yellow(defaultValue as unknown as string)}${colors.green('"')}`}`,
           );
           this.warnStack.push('');
           envar = defaultValue as unknown as string;

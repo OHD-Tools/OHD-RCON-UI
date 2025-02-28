@@ -7,6 +7,9 @@ import { AnonymousPrincipal } from './anonymous.principal';
 import { INJECT } from '~INJECTS';
 import { AuthService } from '~v1/auth/auth.service';
 import { OHDUserPrincipal } from './ohduser.principal';
+import { ApiToken } from '~v1/auth/api_token.model';
+import { Op } from 'sequelize';
+import { User } from '~v1/users/user.model';
 
 @injectable()
 export class AuthProvider implements interfaces.AuthProvider {
@@ -52,12 +55,22 @@ export class AuthProvider implements interfaces.AuthProvider {
 
     if (decodedUser == null) return new AnonymousPrincipal(false);
 
-    //! Check Validity
+    const validToken = await ApiToken.findOne({
+      where: {
+        user_id: decodedUser.id,
+        token_id: decodedUser.jti,
+        type: decodedUser.type,
+        expiresAt: { [Op.gte]: Date.now() },
+      },
+    });
+    if (validToken == null) return new AnonymousPrincipal(false);
+
+    const details = await User.findOne({ where: { id: decodedUser.id } });
+    if (details == null) return new AnonymousPrincipal(false);
 
     const principal = new OHDUserPrincipal(
       decodedUser.id,
-      //! Pull from db
-      { id: decodedUser.id },
+      details,
       decodedUser.type,
       decodedUser.roles,
     );
