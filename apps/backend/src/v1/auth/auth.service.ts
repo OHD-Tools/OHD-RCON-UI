@@ -4,6 +4,7 @@ import { Logger } from '~utils/logger';
 import { EnvService } from '~env/env.service';
 import { INJECT } from '~INJECTS';
 import { ApiPermission } from '~/auth/ApiPermission';
+import { ApiToken } from './api_token.model';
 @injectable()
 export class AuthService {
   constructor() {
@@ -23,7 +24,7 @@ export class AuthService {
     };
   }
 
-  async getUserToken(token: string) {
+  getUserToken(token: string) {
     let decoded!: string | jwt.JwtPayload;
     try {
       decoded = this.verifyToken(token);
@@ -33,5 +34,14 @@ export class AuthService {
     }
     const tokenDecoded = decoded as unknown;
     return tokenDecoded as ReturnType<typeof this.verifyToken> | null;
+  }
+
+  async invalidateToken(token: string, userId?: string) {
+    const decoded = this.getUserToken(token);
+    if (!decoded) return false;
+    await ApiToken.destroy({
+      where: { user_id: userId ?? decoded.id, token_id: decoded?.jti },
+    });
+    return true;
   }
 }

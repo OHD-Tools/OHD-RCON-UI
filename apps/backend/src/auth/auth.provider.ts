@@ -40,7 +40,7 @@ export class AuthProvider implements interfaces.AuthProvider {
       )
         return new AnonymousPrincipal(false);
 
-      decodedUser = await this.authService.getUserToken(token);
+      decodedUser = this.authService.getUserToken(token);
 
       if (
         decodedUser == null ||
@@ -49,7 +49,7 @@ export class AuthProvider implements interfaces.AuthProvider {
         return new AnonymousPrincipal(false);
     } else {
       //? Api Token
-      decodedUser = await this.authService.getUserToken(api_key);
+      decodedUser = this.authService.getUserToken(api_key);
       if (decodedUser?.type !== 'api') return new AnonymousPrincipal(false);
     }
 
