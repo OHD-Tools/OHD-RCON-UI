@@ -1257,11 +1257,11 @@ __metadata:
   linkType: hard
 
 "@ohd-tools/rcon@npm:^0.12.1":
-  version: 0.12.1
-  resolution: "@ohd-tools/rcon@npm:0.12.1"
+  version: 0.12.2
+  resolution: "@ohd-tools/rcon@npm:0.12.2"
   dependencies:
     "@ohd-tools/utils": "npm:^0.12.1"
-  checksum: 10c0/45a006a7e7c2a5231fabd5e4cc2b89cf8454f307dbfc91f9d9f94d888061584db2dcc79c6d28b229c20cedeae939f4b48b22a1c0f876ca8e6af0253f6662cfa4
+  checksum: 10c0/bf28adac4494e0e9c9dea0a4178bc69fea552d90029e37ebf44aadec4b34bb1285ea8080a6d1ead8373c0d8bcf05a873f3f7f8acc52cc5c6b8ebe481df55de26
   languageName: node
   linkType: hard
 
