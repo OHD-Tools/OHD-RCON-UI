@@ -1257,20 +1257,20 @@ __metadata:
   linkType: hard
 
 "@ohd-tools/rcon@npm:^0.12.1":
-  version: 0.12.2
-  resolution: "@ohd-tools/rcon@npm:0.12.2"
+  version: 0.12.4
+  resolution: "@ohd-tools/rcon@npm:0.12.4"
   dependencies:
-    "@ohd-tools/utils": "npm:^0.12.1"
-  checksum: 10c0/bf28adac4494e0e9c9dea0a4178bc69fea552d90029e37ebf44aadec4b34bb1285ea8080a6d1ead8373c0d8bcf05a873f3f7f8acc52cc5c6b8ebe481df55de26
+    "@ohd-tools/utils": "npm:^0.12.4"
+  checksum: 10c0/48553416e6c1c6e2f3be53d36e8277eec17f87cc35ff7b69e4b9a2d4ec50ee9cc25367d8d2eeb93cb8a1077e9b18ac20d058d41c30bda4d24d9e1c8413a2089b
   languageName: node
   linkType: hard
 
-"@ohd-tools/utils@npm:^0.12.1":
-  version: 0.12.1
-  resolution: "@ohd-tools/utils@npm:0.12.1"
+"@ohd-tools/utils@npm:^0.12.4":
+  version: 0.12.4
+  resolution: "@ohd-tools/utils@npm:0.12.4"
   dependencies:
     ini: "npm:^5.0.0"
-  checksum: 10c0/d46fe5dc99be7949e7ec900437eafcc7f1dfdac9c8b2f6a29f0142e9de655adf083201dad58176bcebe98034bf31b2147048de44e6a7ce711cafe489b1052e19
+  checksum: 10c0/7bec674f82cc92ddc4fa3d69c7b52cc55e843ce63c11be404c20eb4f997c511c4ea3c7bcd49eb5c505dba3acd4072e4e4bc6a106ab1cd204c8637be4db1e37da
   languageName: node
   linkType: hard
 
