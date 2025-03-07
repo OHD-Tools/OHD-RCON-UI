@@ -14,11 +14,13 @@ import {
   type Response,
   type NextFunction,
 } from 'express';
+import * as swagger from 'swagger-express-ts';
 import './v1';
 import { setupModels } from './connection';
 import { NotFoundError } from './errors/NotFoundError';
 import { NetworkError } from './errors/NetworkError';
 import { ZodError } from 'zod';
+import { swaggerConfig } from './swagger';
 
 const createServer = () => {
   bindContainer(container);
@@ -69,6 +71,7 @@ const createServer = () => {
       .disable('x-powered-by')
       .use(json())
       .use(urlencoded({ extended: true }));
+    app.use(swagger.express(swaggerConfig));
   });
 
   const app = server.build();

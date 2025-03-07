@@ -12,7 +12,6 @@ import {
   PrimaryKey,
   Table,
 } from 'sequelize-typescript';
-import { ApiPermission } from '~/auth/ApiPermission';
 import { IdUtil } from '~utils/IdUtil';
 
 @Table({ tableName: 'api_tokens', timestamps: true })
@@ -41,7 +40,7 @@ export class ApiToken extends Model<
 
   @Default([])
   @Column(DataType.JSON)
-  declare roles: CreationOptional<ApiPermission[]>;
+  declare roles: CreationOptional<string>;
 
   @Column(DataType.DATE)
   declare expiresAt: CreationOptional<Date>;

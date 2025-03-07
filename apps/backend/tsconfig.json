@@ -21,6 +21,7 @@
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true,
+    "noErrorTruncation": true,
 
     /* Pathing */
     "baseUrl": "./src/",
