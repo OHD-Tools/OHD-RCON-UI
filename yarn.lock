@@ -5487,14 +5487,15 @@ __metadata:
   linkType: hard
 
 "inversify-express-utils@npm:^6.4.10":
-  version: 6.4.10
-  resolution: "inversify-express-utils@npm:6.4.10"
+  version: 6.5.0
+  resolution: "inversify-express-utils@npm:6.5.0"
   dependencies:
     http-status-codes: "npm:2.3.0"
   peerDependencies:
     express: ^4.21.1
     inversify: ^6.0.3
-  checksum: 10c0/025fa5fab1819e82412cbc48630b33fb0951e47936bcde5caa2f3a755b0d750a095710726dbbbc18379cffdac58d0d6ecca9ef7886448fccb9c0de6d521d8338
+    reflect-metadata: ~0.2.2
+  checksum: 10c0/8ecd334efa7a15a5d87215b91babc133c30b86323f240310e0c9186c9666675140b46631093e3220093c7b8ae974551ee4c3679b7383920a5d73f53a2d7b8031
   languageName: node
   linkType: hard
 
