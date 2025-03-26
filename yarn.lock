@@ -1895,7 +1895,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/types@npm:0.1.19, @swc/types@npm:^0.1.19":
+"@swc/types@npm:0.1.20":
+  version: 0.1.20
+  resolution: "@swc/types@npm:0.1.20"
+  dependencies:
+    "@swc/counter": "npm:^0.1.3"
+  checksum: 10c0/bc1e548516ed700c25e92459851a0a0bb4f7a1cecb786faf9ba60ed41ba4d13fd075191f98108dfacdb5e9d3d27913184ed698e1344c40b2748f49a15236c537
+  languageName: node
+  linkType: hard
+
+"@swc/types@npm:^0.1.19":
   version: 0.1.19
   resolution: "@swc/types@npm:0.1.19"
   dependencies:
@@ -2813,7 +2822,7 @@ __metadata:
     "@swc-node/register": "npm:^1.10.9"
     "@swc/cli": "npm:^0.6.0"
     "@swc/core": "npm:^1.11.1"
-    "@swc/types": "npm:0.1.19"
+    "@swc/types": "npm:0.1.20"
     "@types/body-parser": "npm:^1"
     "@types/color-convert": "npm:^2.0.4"
     "@types/compression": "npm:^1"
