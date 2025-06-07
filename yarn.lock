@@ -1997,12 +1997,12 @@ __metadata:
   linkType: hard
 
 "@types/compression@npm:^1":
-  version: 1.8.0
-  resolution: "@types/compression@npm:1.8.0"
+  version: 1.8.1
+  resolution: "@types/compression@npm:1.8.1"
   dependencies:
     "@types/express": "npm:*"
     "@types/node": "npm:*"
-  checksum: 10c0/7e9dc7b7045922e565364e5767a3801a01fed248a62dec8b154b2ae64e14eb2275fa490009298f05a8840d3a8ee744f517c00a3006d54615a06a09eec169cd9e
+  checksum: 10c0/3b958b1c9b7cdf9852cd8fbd85fb9067196656fb771aaed950b1ae6ebab5e87d2f7b75260160c772038919a12c8ca8bee42aaa3fdb989b0646163979d75fe8b2
   languageName: node
   linkType: hard
 
