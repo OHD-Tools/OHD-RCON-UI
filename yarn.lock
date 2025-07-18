@@ -7212,9 +7212,9 @@ __metadata:
   linkType: hard
 
 "oracledb@npm:^6.8.0":
-  version: 6.8.0
-  resolution: "oracledb@npm:6.8.0"
-  checksum: 10c0/344e3cb641c60896d618d9f4d080b071a199afd98123e0a2e65ca4577c91b6ca383acf85a904c9ac349c2ffa5baa7605001385c430864509efdc55fb86e54799
+  version: 6.9.0
+  resolution: "oracledb@npm:6.9.0"
+  checksum: 10c0/c02e5ca12a04bc90c6df5a276902f11bb809d001ad7559d2c45a675e1182c5ee7944c79c4069a8f5dfaba5934f4ef7af82758adff4a6919ac31a5bc66e42ed4f
   languageName: node
   linkType: hard
 
