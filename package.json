@@ -12,7 +12,7 @@
   ],
   "devDependencies": {
     "@eslint/js": "^9.21.0",
-    "@manypkg/cli": "^0.24.0",
+    "@manypkg/cli": "^0.25.0",
     "@preconstruct/cli": "^2.8.11",
     "concurrently": "^9.1.2",
     "eslint": "^9.21.0",
