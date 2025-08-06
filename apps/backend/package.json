@@ -12,7 +12,7 @@
     "@swc-node/register": "^1.10.9",
     "@swc/cli": "^0.7.0",
     "@swc/core": "^1.11.1",
-    "@swc/types": "0.1.23",
+    "@swc/types": "0.1.24",
     "@types/body-parser": "^1",
     "@types/color-convert": "^2.0.4",
     "@types/compression": "^1",
