@@ -2182,11 +2182,11 @@ __metadata:
   linkType: hard
 
 "@types/oracledb@npm:^6":
-  version: 6.9.0
-  resolution: "@types/oracledb@npm:6.9.0"
+  version: 6.9.1
+  resolution: "@types/oracledb@npm:6.9.1"
   dependencies:
     "@types/node": "npm:*"
-  checksum: 10c0/06d2c4d161f1a40ac7a44a1a6b7e2edc4d4f121891dfc094b731ffd9eed6dfce016bde6931800f9ef90409d269538050c5458b453b6f9f317a2abfdde3bf0e97
+  checksum: 10c0/44c8d658e427da5bb7ec996537ba280893996f3662937c6669fe99710b673351f1f84d1f39da1712710559cf93617c6117d7dc76dcc5e06557da81f447c08736
   languageName: node
   linkType: hard
 
