@@ -1,6 +1,6 @@
 {
   "name": "ohd-rcon-ui",
-  "packageManager": "yarn@4.9.2",
+  "packageManager": "yarn@4.9.3",
   "scripts": {
     "lint:fix": "yarn manypkg exec yarn lint:fix",
     "build": "yarn manypkg exec yarn build",
