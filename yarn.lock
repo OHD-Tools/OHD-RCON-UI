@@ -968,8 +968,8 @@ __metadata:
   linkType: hard
 
 "@manypkg/cli@npm:^0.25.0":
-  version: 0.25.0
-  resolution: "@manypkg/cli@npm:0.25.0"
+  version: 0.25.1
+  resolution: "@manypkg/cli@npm:0.25.1"
   dependencies:
     "@manypkg/get-packages": "npm:^3.1.0"
     detect-indent: "npm:^7.0.1"
@@ -984,7 +984,7 @@ __metadata:
     validate-npm-package-name: "npm:^6.0.0"
   bin:
     manypkg: bin.js
-  checksum: 10c0/1a490f07f9bef5231720cba2b41809e54429918fe9145ca2fd43503751ed474520cdd1069457b59c8acd6511139d831ffd2a70620190907c91a648a7e32f7aea
+  checksum: 10c0/9c03e721bb82a0ee5a3409e24c017d02787e33d859dee0deb8410c6b82042f3fba7e21327397830a76cfe19673ea572a5785316a2a44e03258edbd5e28d9539c
   languageName: node
   linkType: hard
 
