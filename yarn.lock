@@ -3009,7 +3009,7 @@ __metadata:
     swagger-jsdoc: "npm:^6.2.8"
     tedious: "npm:18.6.1"
     typescript: "npm:^5.7.3"
-    zod: "npm:^3.24.2"
+    zod: "npm:^4.0.0"
   dependenciesMeta:
     "@types/oracledb":
       optional: true
@@ -10001,9 +10001,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.21.4, zod@npm:^3.24.2":
+"zod@npm:^3.21.4":
   version: 3.25.76
   resolution: "zod@npm:3.25.76"
   checksum: 10c0/5718ec35e3c40b600316c5b4c5e4976f7fee68151bc8f8d90ec18a469be9571f072e1bbaace10f1e85cf8892ea12d90821b200e980ab46916a6166a4260a983c
+  languageName: node
+  linkType: hard
+
+"zod@npm:^4.0.0":
+  version: 4.1.8
+  resolution: "zod@npm:4.1.8"
+  checksum: 10c0/5eae39da09d7bd0564a30dfd2348811e4e2e7dd15955d8f3444f8e196f35e5422b1482eda234b722fafb0738f4a8b718adb042b860936bfdd2cc19cdbdac8a9a
   languageName: node
   linkType: hard
