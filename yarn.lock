@@ -3473,11 +3473,11 @@ __metadata:
   linkType: hard
 
 "color-convert@npm:^3.0.1":
-  version: 3.1.0
-  resolution: "color-convert@npm:3.1.0"
+  version: 3.1.2
+  resolution: "color-convert@npm:3.1.2"
   dependencies:
     color-name: "npm:^2.0.0"
-  checksum: 10c0/3e6c92a7122dc8429036f134fdc821064fcf34c4ed67855d6ec29c207eb96e761dbb37bb2a64572a703fc3a7a8fa4e970e0a194619b2acd46b55bcd2ace06293
+  checksum: 10c0/5b83147015024931a06b57b197d09fc1f67f2efc93dfea5f042aba4788a95b13aebe511b0a929e0e837e442fd91a60c27de8e6761ff30e1a1e2fb634cca8a976
   languageName: node
   linkType: hard
 
