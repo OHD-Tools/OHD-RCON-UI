@@ -1549,10 +1549,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rolldown/pluginutils@npm:1.0.0-beta.27":
-  version: 1.0.0-beta.27
-  resolution: "@rolldown/pluginutils@npm:1.0.0-beta.27"
-  checksum: 10c0/9658f235b345201d4f6bfb1f32da9754ca164f892d1cb68154fe5f53c1df42bd675ecd409836dff46884a7847d6c00bdc38af870f7c81e05bba5c2645eb4ab9c
+"@rolldown/pluginutils@npm:1.0.0-beta.43":
+  version: 1.0.0-beta.43
+  resolution: "@rolldown/pluginutils@npm:1.0.0-beta.43"
+  checksum: 10c0/1c17a0b16c277a0fdbab080fd22ef91e37c1f0d710ecfdacb6a080068062eb14ff030d0e9d2ec2325a1d4246dba0c49625755c82c0090f6cbf98d16e80183e02
   languageName: node
   linkType: hard
 
@@ -1925,7 +1925,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.11.1, @swc/core@npm:^1.12.11":
+"@swc/core@npm:^1.11.1, @swc/core@npm:^1.13.5":
   version: 1.14.0
   resolution: "@swc/core@npm:1.14.0"
   dependencies:
@@ -2492,15 +2492,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react-swc@npm:^3.8.0":
-  version: 3.11.0
-  resolution: "@vitejs/plugin-react-swc@npm:3.11.0"
+"@vitejs/plugin-react-swc@npm:^4.0.0":
+  version: 4.2.0
+  resolution: "@vitejs/plugin-react-swc@npm:4.2.0"
   dependencies:
-    "@rolldown/pluginutils": "npm:1.0.0-beta.27"
-    "@swc/core": "npm:^1.12.11"
+    "@rolldown/pluginutils": "npm:1.0.0-beta.43"
+    "@swc/core": "npm:^1.13.5"
   peerDependencies:
     vite: ^4 || ^5 || ^6 || ^7
-  checksum: 10c0/0d12ee81f8c8acb74b35e7acfc45d23ecc2714ab3a0f6060e4bd900a6a739dd5a9be9c6bc842388f3c406f475f2a83e7ff3ade04ec6df9172faa1242e4faa424
+  checksum: 10c0/6be31f6771853b8cda9e6ce55dc50589fc181bfba37be1547434355ad70e12cb2ed409fa5bd88332f3e5b3ef895fb67c786f83f02ca1c0351302a231f2265fa0
   languageName: node
   linkType: hard
 
@@ -4895,7 +4895,7 @@ __metadata:
     "@eslint/js": "npm:^9.21.0"
     "@types/react": "npm:^19.0.10"
     "@types/react-dom": "npm:^19.0.4"
-    "@vitejs/plugin-react-swc": "npm:^3.8.0"
+    "@vitejs/plugin-react-swc": "npm:^4.0.0"
     eslint: "npm:^9.21.0"
     eslint-plugin-react-hooks: "npm:^5.0.0"
     eslint-plugin-react-refresh: "npm:^0.4.19"
