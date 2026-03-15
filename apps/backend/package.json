@@ -42,7 +42,7 @@
     "pg": "^8.13.3",
     "pg-hstore": "^2.3.4",
     "sqlite3": "^5.1.7",
-    "tedious": "18.6.1"
+    "tedious": "18.6.2"
   },
   "dependencies": {
     "@bombitmanbomb/utils": "^3.2.1",
