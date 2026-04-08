@@ -14,7 +14,7 @@
     "@swc/core": "^1.11.1",
     "@swc/types": "0.1.25",
     "@types/body-parser": "^1",
-    "@types/color-convert": "^2.0.4",
+    "@types/color-convert": "^3.0.0",
     "@types/compression": "^1",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
