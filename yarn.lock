@@ -1701,8 +1701,8 @@ __metadata:
   linkType: hard
 
 "@preconstruct/cli@npm:^2.8.11":
-  version: 2.8.13
-  resolution: "@preconstruct/cli@npm:2.8.13"
+  version: 2.9.0
+  resolution: "@preconstruct/cli@npm:2.9.0"
   dependencies:
     "@babel/code-frame": "npm:^7.5.5"
     "@babel/core": "npm:^7.7.7"
@@ -1741,8 +1741,8 @@ __metadata:
     v8-compile-cache: "npm:^2.1.1"
     zod: "npm:^3.21.4"
   bin:
-    preconstruct: bin.js
-  checksum: 10c0/c30ef55d28aad0ea791583bbb3713db9e93c22495ead470e87736ce7195082a3969d2c90ad5b5185b15fc31f945e3d016931691d93f03a084e1b4c6a87ddb959
+    preconstruct: ./bin.js
+  checksum: 10c0/8584930ee7c17131e3cfa32ea7e0e81f50faef7e1b5747b43d53c7807a2cbfa0ef04a883752433f9013781e6dc7693b469c95991757933097459a80a6bc6f4c7
   languageName: node
   linkType: hard
 
