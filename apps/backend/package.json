@@ -66,6 +66,6 @@
     "sequelize-typescript": "^2.1.6",
     "swagger-express-ts": "^1.1.0",
     "swagger-jsdoc": "^6.2.8",
-    "zod": "^3.24.2"
+    "zod": "^4.0.0"
   }
 }
