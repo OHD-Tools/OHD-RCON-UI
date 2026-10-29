@@ -7307,8 +7307,8 @@ __metadata:
   linkType: hard
 
 "mysql2@npm:^3.12.0":
-  version: 3.24.5
-  resolution: "mysql2@npm:3.24.5"
+  version: 3.24.6
+  resolution: "mysql2@npm:3.24.6"
   dependencies:
     aws-ssl-profiles: "npm:^1.1.2"
     generate-function: "npm:^2.3.1"
@@ -7319,7 +7319,7 @@ __metadata:
     sql-escaper: "npm:^1.5.1"
   peerDependencies:
     "@types/node": ">= 8"
-  checksum: 10c0/8d90aa81d5976d6be92c9031ea0c86c0f6823161c219e945cbc20e0e09aca8d7a05e314ba2a1a5f01e6c376ca43eaa14a110c980e2c1c0690a52152a00ea8f04
+  checksum: 10c0/43b6353f14bf54eb216304d4b75e5f0ffcf4476bf0531f4e6fbae61f0654816ef1b6a508317a99e7c1b755e76a64b5a915a452ea1e7802b975406691e08f155e
   languageName: node
   linkType: hard
 
