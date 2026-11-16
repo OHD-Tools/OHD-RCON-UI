@@ -6949,15 +6949,15 @@ __metadata:
   linkType: hard
 
 "mariadb@npm:^3.4.0":
-  version: 3.5.4
-  resolution: "mariadb@npm:3.5.4"
+  version: 3.5.5
+  resolution: "mariadb@npm:3.5.5"
   dependencies:
     "@types/geojson": "npm:^7946.0.16"
     "@types/node": "npm:>=20"
     denque: "npm:^2.1.0"
     iconv-lite: "npm:^0.7.2"
     lru-cache: "npm:^11.5.0"
-  checksum: 10c0/c1cdcd63e0b4ff8778b6ce3da2be37f53b1122e8a5bc5427c0d6956867949f5c387b02e07baf32a996ab1f3d10b2679e5634f4492137fa468c458f7c3a3025ac
+  checksum: 10c0/cfc9b724eb5ed4b65118af67d34af7cd13f33fb91e5c9caf62f16b43bd9895221387e88f7d38196e4995af3ab1e7e984873db2d47e100bb94ab081fc2f2f0d0d
   languageName: node
   linkType: hard
 
