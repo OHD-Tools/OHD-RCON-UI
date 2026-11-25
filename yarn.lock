@@ -3242,7 +3242,7 @@ __metadata:
     "@types/validator": "npm:^13.12.2"
     "@types/ws": "npm:^8.5.14"
     body-parser: "npm:^1.20.3"
-    chalk: "npm:4.1.2"
+    chalk: "npm:6.0.1"
     color-convert: "npm:^3.0.1"
     colors: "npm:^1.4.0"
     compression: "npm:^1.8.0"
@@ -3680,6 +3680,13 @@ __metadata:
     ansi-styles: "npm:^4.1.0"
     supports-color: "npm:^7.1.0"
   checksum: 10c0/4a3fef5cc34975c898ffe77141450f679721df9dde00f6c304353fa9c8b571929123b26a0e4617bde5018977eb655b31970c297b91b63ee83bb82aeb04666880
+  languageName: node
+  linkType: hard
+
+"chalk@npm:6.0.1":
+  version: 6.0.1
+  resolution: "chalk@npm:6.0.1"
+  checksum: 10c0/4c58238fa874f531b5201bf99ebd374742be31f8e306c7783d930856aec305f2dea3e07531a8805b2a7ba92807296e39ced52e9f673703e0264d96e83998a429
   languageName: node
   linkType: hard
 
